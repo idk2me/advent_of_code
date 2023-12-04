@@ -1,6 +1,6 @@
 import re
 
-numbers = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"],
+# numbers = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"],
 
 
 def answer(numbers:[list[str]], data: list[str]) -> int:
