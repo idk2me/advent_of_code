@@ -1,9 +1,9 @@
 import re
 
-# numbers = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"],
+numbers = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"],
 
 
-def answer(numbers:[list[str]], data: list[str]) -> int:
+def answer(data: list[str]) -> int:
   sum = 0
   data = list(map(lambda x : re.sub("[a-zA-Z]", "", x), data))
   for i in data:
@@ -15,7 +15,13 @@ def answer(numbers:[list[str]], data: list[str]) -> int:
     sum += int(i)
   return sum
 
+def answer2(data: list[str], numbers:[list[str]]) -> int:
+  # I currently have no idea how to approach this
+  pass
+
 with open('day1.txt', 'r') as f:
   data = f.read().splitlines()
-  print(answer(numbers, data))
+  print(answer(data))
+  print(answer2(data, numbers))
+
   
